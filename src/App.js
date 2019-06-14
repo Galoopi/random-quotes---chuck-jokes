@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
+import JokeDisplay from './Components/JokeDisplay';
+import QuoteBox from './Components/QuoteBox';
+import Header from './Components/Header';
 import './App.css';
 
-function App() {
+
+class App extends Component {
+
+render() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <Header />
+    <section class="fl w-100">
+      <div class="fl w-100 w-50-m w-100-l pa3-m pa4-l">
+      <JokeDisplay  />
+      
+      </div>
 
+      <div class="fl w-100 w-50-m w-100-l pa3-m pa4-l">
+      <QuoteBox />
+
+      </div>
+      </section>
+
+
+      </div>
+    );
+  }
+}
 export default App;

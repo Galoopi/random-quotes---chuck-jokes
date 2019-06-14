@@ -1,33 +1,92 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  padding-bottom: 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  padding-bottom: 200px;
+}
+.quotebox {
+  padding-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 20vh;
+}
+.bl {
+    border-left-style: solid;
+    border-left-width: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.b--blue {
+    border-color: #408bc9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bw2 {
+    border-width: .25rem;
+}
+
+.athelas {
+    font-family: athelas, georgia, serif;
+}
+
+.fs-normal {
+    font-style: normal;
+}
+
+.tracked {
+    letter-spacing: .1em;
+}
+
+.lh-copy {
+    line-height: 1.5;
+}
+
+.black-90 {
+    color: rgba(0, 0, 0, .9);
+}
+
+.pa4 {
+    padding: 2rem;
+}
+
+.pl4 {
+    padding-left: 2rem;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.f5 {
+    font-size: 1rem;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.measure {
+    max-width: 30em;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    .f4-m {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .f3-l {
+        font-size: 1.5rem;
+    }
 }
